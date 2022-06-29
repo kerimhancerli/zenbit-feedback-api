@@ -17,6 +17,9 @@ import { FeedbackModule } from './feedback.module';
       entities: [Feedback],
       synchronize: true,
       migrationsTableName: 'migrations',
+      extra:{
+        ssl:true
+      }
     }),
     FeedbackModule,
   ],
